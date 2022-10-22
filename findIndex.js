@@ -1,4 +1,4 @@
-const myCustomFindIndexFunction = function (callback) {
+Array.prototype.findIndexFromScratch = function (callback) {
   console.log("My Custom findIndex Function!");
 
   for (let i = 0; i < this.length; i++) {
@@ -8,8 +8,6 @@ const myCustomFindIndexFunction = function (callback) {
   }
   return undefined;
 };
-
-Array.prototype.findIndexFromScratch = myCustomFindIndexFunction;
 
 const numbers = [16, 4, 9, 20, 50, 10];
 const value = numbers.findIndexFromScratch(checkAdult);

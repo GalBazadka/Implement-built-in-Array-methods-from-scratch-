@@ -1,4 +1,4 @@
-const myCustomSomeFunction = function (callback) {
+Array.prototype.someFromScratch = function (callback) {
   console.log("My Custom some Function!");
 
   for (let i = 0; i < this.length; i++) {
@@ -8,8 +8,6 @@ const myCustomSomeFunction = function (callback) {
   }
   return false;
 };
-
-Array.prototype.someFromScratch = myCustomSomeFunction;
 
 const numbers = [5, 3, 5, 8, 5];
 const result = numbers.someFromScratch(checkAdult);

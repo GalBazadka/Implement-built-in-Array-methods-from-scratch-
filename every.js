@@ -1,4 +1,4 @@
-const myCustomEveryFunction = function (callback) {
+Array.prototype.everyFromScratch = function (callback) {
   console.log("My Custom every Function!");
 
   for (let i = 0; i < this.length; i++) {
@@ -8,8 +8,6 @@ const myCustomEveryFunction = function (callback) {
   }
   return true;
 };
-
-Array.prototype.everyFromScratch = myCustomEveryFunction;
 
 const numbers = [20, 34, 3, 25, 20];
 const result = numbers.everyFromScratch(checkAdult);

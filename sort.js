@@ -1,4 +1,4 @@
-const myCustomSortFunction = function (callback) {
+Array.prototype.sortFromScratch = function () {
   console.log("My Custom sort Function!");
 
   for (let i = 0; i < this.length; i++) {
@@ -10,8 +10,6 @@ const myCustomSortFunction = function (callback) {
   }
   return this;
 };
-
-Array.prototype.sortFromScratch = myCustomSortFunction;
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.sortFromScratch();

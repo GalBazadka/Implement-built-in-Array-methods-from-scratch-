@@ -1,4 +1,4 @@
-const myCustomReverseFunction = function () {
+Array.prototype.reverseFromScratch = function () {
   console.log("My Custom Reverse Function!");
 
   let newArray = [];
@@ -13,8 +13,6 @@ const myCustomReverseFunction = function () {
 
   return this;
 };
-
-Array.prototype.reverseFromScratch = myCustomReverseFunction;
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.reverseFromScratch();
